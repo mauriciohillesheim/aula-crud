@@ -1,12 +1,12 @@
 const ServicePessoa = require('../services/pessoa')
 
-// Criando a classe controller da paessoa 
+// Criando a classe controller da pessoa 
 class ControllerPessoa{
     //TODAS as funções do controller, recebem req, res
-    GetPessoas(req, res) {
+    async GetPessoas(req, res) {
         //Todas as funções do controller tem try catch
         try{
-            const pessoas = ServicePessoa.GetPessoas()
+            const pessoas = await ServicePessoa.GetPessoas()
             res.send({ msg: pessoas})
         }catch (error) {
             // todo catch vai ser assim

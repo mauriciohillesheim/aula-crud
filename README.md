@@ -1,5 +1,5 @@
 # aula-crud
-alua crud node js
+aula crud node js
 
 # Ordem de criação dos arquivos
 
