@@ -14,6 +14,7 @@ app.use(express.json())
 const PORT=3000
 
 database.db
+
     .sync({ force: false })
     .then((_) => {
         console.info("Banco conectado com sucesso")

@@ -1,5 +1,4 @@
 // const nomes = new Array("Ana", "Sebastião")
-
 //criando a classe servicePessoa
 const database = require('../config/database')
 class ModelPessoa {
@@ -9,12 +8,10 @@ class ModelPessoa {
                 type: database.db.Sequelize.INTEGER,
                 primaryKey: true,
                 autoIncrement: true
-            },
-        
+            },        
             name: {
                 type: database.db.Sequelize.STRING
             },
-
             email: {
                 type: database.db.Sequelize.STRING,
                 unique: true 
@@ -24,10 +21,6 @@ class ModelPessoa {
             }
         })
     }
-
-
-
-
     // GetPessoas() {
     //     return nomes
     // }

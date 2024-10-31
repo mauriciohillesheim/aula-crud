@@ -12,3 +12,6 @@ router.delete('/:id', controllerPessoa.DeletePessoa)
 
 //Exportar as rotas
 module.exports = router
+
+//post e put tem body
+//get e delete não tem
